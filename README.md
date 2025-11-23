@@ -169,12 +169,16 @@ ORDER BY
 
 ```
 **Результат:**
-"Giant Bicycles"
-"OHM Cycles"
+| brand          |
+|----------------|
+| Giant Bicycles |
+| OHM Cycles     |
 
 
 Скриншоты: https://disk.yandex.ru/i/1ORpP_pj1Qdzmw
 
+
+.
 
 
 
@@ -203,16 +207,20 @@ GROUP BY order_date ORDER BY order_date; -- собираем строки по �
 https://disk.yandex.ru/i/xcFfZ21FNM4dug
 
 **Результат:**
-day, approved_online_orders,  uniq_clients
-"2017-04-01"	37	37
-"2017-04-02"	29	29
-"2017-04-03"	27	27
-"2017-04-04"	32	32
-"2017-04-05"	33	32
-"2017-04-06"	36	36
-"2017-04-07"	24	24
-"2017-04-08"	33	33
-"2017-04-09"	30	30
+| day        | approved_online_orders | uniq_clients |
+|------------|------------------------|--------------|
+| 2017-04-01 | 37 | 37 |
+| 2017-04-02 | 29 | 29 |
+| 2017-04-03 | 27 | 27 |
+| 2017-04-04 | 32 | 32 |
+| 2017-04-05 | 33 | 32 |
+| 2017-04-06 | 36 | 36 |
+| 2017-04-07 | 24 | 24 |
+| 2017-04-08 | 33 | 33 |
+| 2017-04-09 | 30 | 30 |
+
+
+.
 
 
 **Запрос 3.** 
@@ -239,9 +247,11 @@ SELECT job_title FROM customer WHERE
 https://disk.yandex.ru/i/7Wi4jU0aiQN4Mw
 
 **Результат:**
-job_title:
-"Senior Sales Associate"
-"Senior Developer"
+
+| job_title              |
+|------------------------|
+| Senior Sales Associate |
+| Senior Developer       |
 
 .
 
@@ -274,6 +284,9 @@ https://disk.yandex.ru/i/ajrp59kAuF5zDQ
 Проверяем бренды по отдельности:
 https://disk.yandex.ru/i/EYwpG8suhd72kw 
 
+
+
+.
 
 
 
@@ -313,16 +326,20 @@ LIMIT 10;
 
 **Результат:.**
 
-787	"Norma"	"Batrim"	6
-1	"Laraine"	"Medendorp"	5
-273	"Nevile"	"Abraham"	5
-353	"Antonia"	"Cardis"	5
-1033	"Jacob"	"Claringbold"	5
-1117	"Georgena"	"Guilaem"	5
-2072	"Margie"	"Tillyer"	5
-2498	"Rosana"	"Emmatt"	5
-2595	"Land"	"Bangley"	5
-2637	"Marcile"	"Christley"	5
+| customer_id | first_name | last_name   | online_order_count |
+|-------------|------------|------------|---------------------|
+| 787         | Norma      | Batrim     | 6                   |
+| 1           | Laraine    | Medendorp  | 5                   |
+| 273         | Nevile     | Abraham    | 5                   |
+| 353         | Antonia    | Cardis     | 5                   |
+| 1033        | Jacob      | Claringbold| 5                   |
+| 1117        | Georgena   | Guilaem    | 5                   |
+| 2072        | Margie     | Tillyer    | 5                   |
+| 2498        | Rosana     | Emmatt     | 5                   |
+| 2595        | Land       | Bangley    | 5                   |
+| 2637        | Marcile    | Christley  | 5                   |
+
+.
 
 
 **Запрос 6.** 
@@ -353,6 +370,10 @@ https://disk.yandex.ru/i/aFv-_2riGgWiXg
 https://disk.yandex.ru/i/TtCHxQQ0Jcvciw
 
 
+.
+
+
+
 **Запрос 7.** 
 *Вывести всех клиентов из сферы IT (ID, имя, фамилия), которые купили 2 из 5 продуктов с самой высокой list_price в продуктовой линейке Road*
 
@@ -381,12 +402,16 @@ ORDER BY c.customer_id;
 
 Результат: 
 
-customer_id first_name last_name
-604	"Mella"	"Petrovsky"
-983	"Shaylyn"	"Riggs"
-1683	"Brenn"	"Bacon"
-2469	"Kermie"	"Hedger"
-3406	"Lucy"	"Lackmann"
+| customer_id | first_name | last_name  |
+|-------------|------------|-----------|
+| 604         | Mella      | Petrovsky |
+| 983         | Shaylyn    | Riggs     |
+| 1683        | Brenn      | Bacon     |
+| 2469        | Kermie     | Hedger    |
+| 3406        | Lucy       | Lackmann  |
+
+
+.
 
 
 
@@ -447,4 +472,8 @@ ORDER BY
 
 Скриншоты: https://disk.yandex.ru/i/iOLvyaAcdhXdMg
 в результатах 38 строк *см. скриншот*
+
+
+.
+.
 
